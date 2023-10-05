@@ -1,5 +1,13 @@
 function reverseString(str) {
-  // type your code here
+  const letters = str.split('');
+    let b = letters.length - 1
+  const reversedArr = letters.map((letter) => {
+    letter = letters[b];
+    b--  
+    return letter
+  })
+  const reversedStr = reversedArr.join("");
+  return reversedStr
 }
 
 if (require.main === module) {
